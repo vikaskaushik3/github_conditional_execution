@@ -83,6 +83,6 @@ jobs:
       - name: Output information
         run: |
           echo "Some error occurred in previous jobs"
-          echo "${{ github }}"
+          echo "${{ toJson(github) }}"
       
 
